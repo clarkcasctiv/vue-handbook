@@ -2,11 +2,13 @@
 <div>
     <!-- <span>Hello! {{name}}</span> -->
     <!-- <span>{{ Math.Sqrt(16) * Math.random() }}</span> -->
-    <!-- <span>Hello! {{name == 'Flavio' ? 'Flavio' : 'Stranger'}}</span> -->
+     <span>Hello! {{name == 'Flavio' ? 'Flavio' : 'Stranger'}}</span>
+    <p :style="{textDecoration: decoration}">This</p> 
+    <!-- Similar To -->
     <!-- <p :style="{'text-decoration': decoration}">Hi!</p> -->
-    <!-- <p :style="{textDecoration: decoration}">Hi!</p> -->
-    <p :style="styling">Hi!</p>
-    <p :class="paragraphClasses">Hi!</p>
+
+    <p :style="styling">Is!</p>
+    <p :class="paragraphClasses">Vue.JS!</p>
 
 </div>
    
@@ -19,8 +21,8 @@
 export default {
   data() {
     return {
-      // name: "Pujan"
-      // decoration: "underline"
+      name: "Pujan",
+      decoration: "underline",
       textDecoration: "underline",
       textDecorationColor: "blue",
       isUnderlined: true,
