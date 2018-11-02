@@ -3,7 +3,9 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Template></Template> -->
-    <Directive></Directive>
+    <!-- <Directive></Directive> -->
+    <!-- <Method></Method> -->
+    <Computed></Computed>
   </div>
 </template>
 
@@ -11,13 +13,17 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Template from "./components/Template";
 import Directive from "./components/Directive";
+import Method from "./components/Method";
+import Computed from "./components/Computed";
 
 export default {
   name: "app",
-  components: {    
+  components: {
     HelloWorld,
     Template,
-    Directive
+    Directive,
+    Method,
+    Computed
   }
 };
 </script>
